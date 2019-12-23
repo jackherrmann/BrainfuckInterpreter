@@ -3,11 +3,12 @@ import java.util.TreeMap;
 
 public class Interpreter {
 	public static String interpret(String commands, String input) {
+		
 		String output = ""; 
 		
 		
 		
-		// pointers for the tape and commands
+		// pointers for the tape and commands 
 		int dataPointer = 0; // represents the index of the tape that the pointer is on
 		int commandPointer = 0; // represents the index of the current command
 		int inputPointer = 0; 
@@ -18,10 +19,7 @@ public class Interpreter {
 				
 		while (commandPointer < commands.length()) {
 
-					
-					
-					
-					
+				
 			char thisCommand = commands.charAt(commandPointer); 
 					
 					
@@ -129,19 +127,8 @@ public class Interpreter {
 			else {
 				commandPointer++; 
 			}
-					
-					
-					
-					
-					
+							
 		}
-		
-		
-		
-		
-		
-		
-		
 		return output; 
 	}
 }
